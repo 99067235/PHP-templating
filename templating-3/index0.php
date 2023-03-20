@@ -9,8 +9,6 @@
 <body>
     <?php
         include 'content.php';
-        echo '<br>';
-        echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio id magni facilis quae modi corrupti provident eligendi vero in, hic maiores quod numquam quasi voluptates cumque, excepturi nam facere!';
     ?>
 </body>
 </html>
