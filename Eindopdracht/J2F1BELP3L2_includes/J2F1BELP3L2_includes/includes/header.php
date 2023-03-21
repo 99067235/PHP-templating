@@ -1,5 +1,7 @@
 <nav>
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
+    <div class="nav-menu">
+        <a href="?page=onderwerp1.php">Among Us</a>
+        <a href="?page=onderwerp2.php">Minecraft</a>
+        <a href="?page=onderwerp3.php">Mario</a>
+    </div>
 </nav>

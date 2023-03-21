@@ -10,6 +10,21 @@
   <?php
     include 'includes/header.php';
     include 'includes/footer.php';
+    set_error_handler(function ($err_severity, $err_msg, $err_file, $err_line, array $err_context)
+    {
+        throw new ErrorException( $err_msg, 0, $err_severity, $err_file, $err_line );
+    }, E_WARNING);
+    
+    try{
+      if ($_GET != null && $_GET != ""){
+        include("pages/".$_GET['page']);
+      }
+    }
+    catch(Exception $e)
+    {
+      echo '<img src="images/404.png">';
+    }
+    restore_error_handler();
   ?>
 	<!-- laad hier via php je header in (vanuit je includes map) -->
 
@@ -18,7 +33,6 @@
 
 	
 	<!-- laad hier via php je footer in (vanuit je includes map)-->
-
 
 </body>
 </html>
